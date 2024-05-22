@@ -1,0 +1,53 @@
+\documentclass[letter,7pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         Research Resume.tex
+% Editor:       https://github.com/danieldoh
+%               http://linkedin.com/in/hyungjun-doh-4b2488208
+% Last Updated: March 8th, 2022
+% Notes:        All formatting is done in TLCresume.sty
+%               No need to touch that file. 
+%               All actual content is in the sections/ folder.
+%====================
+
+\usepackage{TLCresume}
+
+\hypersetup{
+    colorlinks=true,   % Colored links (true) or borders (false)
+    linkcolor=blue,    % Color of internal links (sections, pages, etc.)
+    urlcolor=black       % Color of external links (URLs)
+}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Hyungjun Doh} % Name Here
+\def\phone{(765)-491-1304}
+\def\email{hdoh@purdue.edu}
+\def\city{271 South River Road}
+\def\address {West Lafayette, IN 47906}
+\def\LinkedIn{\href{https://www.linkedin.com/in/hyungjun-doh99/}{hyungjun-doh99}} % linkedin
+\def\website{\href{https://danieldoh.github.io}{danieldoh.github.io}} % github username
+\def\role{\small Bachelor of Science in Computer Engineering} % JOB TITLE
+
+
+\input{_header}
+\begin{document}
+\input{sections/education}
+\input{sections/project}
+\input{sections/course}
+\input{sections/skills} \vspace{-1em}
+\input{sections/honor}
+\input{sections/Publications}
+
+% make a newpage wherever it is a clean break
+% \newpage
+%\section{Work Experience}
+%\input{sections/work}
+%\section{Honors and Awards}
+%
+\input{sections/activities}
+\end{document}
+
+
